@@ -22,6 +22,10 @@
             </section>
         {{ end }}
 
+        <script src="https://utteranc.es/client.js" repo="jihuichoi/blog-comments" issue-term="pathname" theme="github-light"
+          crossorigin="anonymous" async>
+        </script>
+
         {{ if .Site.Params.showRelatedPosts }}
           {{ $related := .Site.RegularPages.Related . | first 3 }}
           {{ with $related }}

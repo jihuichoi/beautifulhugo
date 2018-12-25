@@ -2,7 +2,8 @@
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.6em;
   color: #404040;
   position: relative;
   background: #FFF;
@@ -37,6 +38,21 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+.blog-post h1 {
+  font-size: 24px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+  font-style: italic;
+  color: #666;
+}
+
 a {
   color: #008AFF;
 }
@@ -361,7 +377,7 @@ footer .theme-by {
 }
 
 .post-preview .post-title {
-  font-size: 30px;
+  font-size: 26px;
   margin-top: 0;
 }
 .post-preview .post-subtitle {
@@ -414,7 +430,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
@@ -519,6 +535,9 @@ footer .theme-by {
   margin-top: 0;
   font-size: 35px;
 }
+.intro-header .posts-heading {
+  text-align: center;
+}
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
   font-size: 27px;
@@ -570,7 +589,7 @@ footer .theme-by {
     font-size: 80px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;
