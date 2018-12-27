@@ -23,6 +23,10 @@ body {
 }
 }
 
+.js-gist-file-update-container td {
+  border: 0px;
+}
+
 p {
   line-height: 1.5;
   margin: 6px 0;
