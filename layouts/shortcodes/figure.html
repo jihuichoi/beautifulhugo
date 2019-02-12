@@ -14,7 +14,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
   {{ with .Get "width" }}style="max-width:{{.}}" {{end}}>
   <figure {{ with .Get "class" }}class="{{.}}" {{ end }} itemprop="associatedMedia" itemscope
     itemtype="http://schema.org/ImageObject">
-    <div class="img" {{ if .Parent }} style="background-image: url('{{ print .Site.BaseURL $thumb }}');"
+    <div class="img" {{ if .Parent }} style="background-image: url('{{ $thumb }}');"
       {{ end }}{{ with .Get "size" }} data-size="{{.}}" {{ end }}>
       <img itemprop="thumbnail" src="{{ $thumb }}"
         {{ with .Get "alt" | default (.Get "caption") | default $thumb }}alt="{{.}}" {{ end }} />
