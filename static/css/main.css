@@ -870,5 +870,9 @@ ul.archive-list li:before {
     width: 0;  
     left: -1em;  
     top: 1.2em;  
-    position: relative;  
+    position: relative;
 } 
+
+ul.archive-list li {  
+    margin-left: 20px;  
+}
