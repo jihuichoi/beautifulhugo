@@ -41,9 +41,9 @@
 - id: languageSwitcherLabel
   translation: "Language"
 - id: gcseLabelShort
-  translation: "Search"
+  translation: "Search "
 - id: gcseLabelLong
-  translation: "Search {{ .Site.Title }}"
+  translation: "Search In {{ .Site.Title }}"
 - id: gcseClose
   translation: "Close"
 
