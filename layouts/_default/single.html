@@ -1,10 +1,10 @@
 {{ define "main" }}
+{{ $datestr := default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         {{ .Content }}
-
         {{ if .Params.tags }}
           <div class="blog-tags">
             {{ range .Params.tags }}
@@ -12,6 +12,10 @@
             {{ end }}
           </div>
         {{ end }}
+        
+        <div class="content-date">
+          <i class="fas fa-calendar"></i>&nbsp;{{ $datestr | i18n "postedOnDate"}}
+        </div>
 
         {{ if $.Param "socialShare" }}
             <hr/>

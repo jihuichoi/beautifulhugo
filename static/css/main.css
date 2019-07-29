@@ -876,3 +876,13 @@ ul.archive-list li:before {
 ul.archive-list li {  
     margin-left: 20px;  
 }
+
+
+/* Content */
+.content-date {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
