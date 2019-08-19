@@ -753,6 +753,7 @@ table tr td :last-child {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
 input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
   box-sizing: content-box;
   line-height: normal;

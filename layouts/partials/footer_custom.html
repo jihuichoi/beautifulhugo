@@ -5,3 +5,11 @@ Do not put anything in this file - it's only here so that hugo won't throw an er
 {{ if .Site.Params.asciinema }}
     <script src="{{ .Site.BaseURL }}/js/asciinema-player.js"></script>
 {{ end }}
+
+<script> 
+    $(document).ready(function () {
+        $("#gcse-btn").click(function () {    
+            setTimeout(function () { $("input.gsc-input").focus();}, 300);
+        });
+    }); 
+</script>
