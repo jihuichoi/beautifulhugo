@@ -180,8 +180,3 @@ var main = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', main.init);
-
-$("navbar > ul > li: nth - child(1) > a").click(function () {
-  // setTimeout(function () { $("input.gsc-input").focus();}, 500);
-  alert("sdfsdf")
-});
