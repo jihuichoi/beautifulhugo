@@ -174,13 +174,14 @@ var main = {
   } else {
     $(".img-desc").hide();
   }
-  }
+  },
 };
+
 
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', main.init);
 
 if ($(location).attr('pathname') === '/') {
-  $('body').css("background", "url('img/background-too_lazy.png') no-repeat fixed center center")
+  $('body').css("background", "url('img/background-too_lazy.png') no-repeat fixed center center");
 }
