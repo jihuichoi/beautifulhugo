@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<main class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="inner">
+                <hr>
+                {{ .Content }}
+                <hr>
+
+                {{ range (.Site.RegularPages.GroupByDate "2006 Jan") }}
+                {{ if not (eq .Key "0001 Jan")}}
+                <h3 class="archive-year">{{ .Key }}</h3>
+                {{ end }}
+                <ul class="archive-list">
+                      {{ range (where .Pages  "Type" "til-posts" ) }}
+                    <li>
+                        {{ .PublishDate.Format "01/02" }}
+                        -
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</main>
+
+{{ end }}
+

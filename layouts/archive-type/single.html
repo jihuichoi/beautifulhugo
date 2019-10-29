@@ -1,18 +1,6 @@
 {{ define "main" }}
 
-<header class="main-header tag-head no-cover">
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h2 class="page-description">
-                {{if .Params.description}}
-                {{.Params.description}}
-                {{end}}
-            </h2>
-        </div>
-    </div>
-</header>
-
-<main class="content" role="main">
+<main class="container" role="main">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="inner">
@@ -21,7 +9,7 @@
                 <h3 class="archive-year">{{ .Key }}</h3>
                 {{ end }}
                 <ul class="archive-list">
-                    {{ range (where .Pages "Type" "posts") }}
+                      {{ range (where .Pages  "Type" "in" (slice "posts" "til-posts") ) }}
                     <li>
                         {{ .PublishDate.Format "01/02" }}
                         -
@@ -36,3 +24,4 @@
 </main>
 
 {{ end }}
+

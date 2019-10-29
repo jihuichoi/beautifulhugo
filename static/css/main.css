@@ -560,7 +560,10 @@ footer .theme-by {
   margin-top: 0;
   font-size: 35px;
 }
-.intro-header .posts-heading {
+.intro-header .posts-heading,
+.intro-header .til-type-heading,
+.intro-header .archive-type-heading
+{
   text-align: center;
 }
 .intro-header .page-heading .page-subheading,
