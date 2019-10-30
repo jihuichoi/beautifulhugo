@@ -6,7 +6,12 @@
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> 
     <article class="post-preview">
       <div class="panel-group" id="accordion">
+        {{ $tmp := 0 }}
         {{ range $key, $value := .Data.Terms.ByCount }}
+          {{ if and (ne $tmp $value.Count) (ne $tmp 0) }}
+            <hr>
+          {{ end }}
+          
           <div class="panel panel-default">
             <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse{{ $value.Name }}" data-parent="#accordion">
                 <div class="panel-heading" id="header{{ $value.Name }}">
@@ -28,6 +33,7 @@
               </div>
             </div>
           </div>
+          {{ $tmp = $value.Count }}
         {{ end }}
       </div>
     </article>
